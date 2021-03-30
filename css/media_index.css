@@ -1,0 +1,91 @@
+@media (min-width: 1281px) and (max-width: 1981px) {
+	.card-list .row {
+	  	width: 3700px;
+	}
+	.vacancies-image {
+		width: 33%;
+		right: 35rem;
+	}
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+	.card-list .row {
+	  	width: 3000px;
+	}
+	.video-wrap {
+		width: 120%;
+	}
+}
+@media (max-width: 1280px) {
+	html {
+		font-size: 0.6vw;
+	}
+	.video-wrap {
+		width: 145%;
+	}
+	.vacancies-image {
+		width: 40%;
+		right: 17rem;
+	}
+	.flip-item {
+		height: 60rem;
+	}
+	.team-item {
+		width: 20.7rem;
+	}
+	.brands-list .row {
+		align-items: stretch;
+	}
+	.riders-card.smirnov {
+	  width: 25rem;
+	  height: 36rem;
+	  background-image: url(../img/riders/smirnov.png);
+	}
+	.riders-card.fomenko {
+	  width: 25rem;
+	  height: 18rem;
+	  background-image: url(../img/riders/fomenko.png);
+	}
+	.riders-card.bibikov {
+	  width: 25rem;
+	  height: 18rem;
+	  background-color: #53606F;
+	}
+	.riders-card.nifontova {
+	  width: 25rem;
+	  height: 55rem;
+	  background-image: url(../img/riders/nifontova.png);
+	}
+	.riders-card.novikova {
+	  width: 25rem;
+	  height: 18rem;
+	  background-image: url(../img/riders/novikova.png);
+	}
+	.riders-card.smola {
+	  color: #666666;
+	  width: 68rem;
+	  height: 30rem;
+	  background-image: url(../img/riders/smola.png);
+	}
+	.riders-card.baranova {
+	  width: 34rem;
+	  height: 24rem;
+	  background-image: url(../img/riders/baranova.png);
+	}
+	.riders-card.orlova {
+	  width: 33rem;
+	  height: 24rem;
+	  color: #666666;
+	  background-image: url(../img/riders/orlova.png);
+	}
+	.riders-card.list {
+	  width: 68rem;
+	  height: 18rem;
+	  background-image: url(../img/riders/list.png);
+	}
+	.brands-list.row {
+		align-items: stretch;
+	}
+	.card-list .row {
+		width: 1900px;
+	}
+}

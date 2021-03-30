@@ -1,0 +1,74 @@
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon.skype {
+  background-image: url(../img/icons/skype.svg);
+}
+.icon.skype.light {
+  background-image: url(../img/icons/skypewhite.svg);
+}
+.icon.instagram {
+  background-image: url(../img/icons/instagram.svg);
+}
+.icon.instagram.dark {
+  background-image: url(../img/icons/instagramdark.svg);
+}
+.icon.login {
+  background-image: url(../img/icons/login.svg);
+}
+.icon.login.light {
+  background-image: url(../img/icons/loginwhite.svg);
+}
+.icon.filled {
+  width: 4rem;
+  height: 4rem;
+}
+.icon.filled.facebook {
+  background-image: url(../img/icons/facebook.svg);
+}
+.icon.filled.facebook.transparent {
+  background-image: url(../img/icons/facebooktransp.svg);
+}
+.icon.filled.vk {
+  background-image: url(../img/icons/vk.svg);
+}
+.icon.filled.vk.transparent {
+  background-image: url(../img/icons/vktransp.svg);
+}
+.icon.filled.basketblack {
+  background-image: url(../img/icons/basketblack.svg);
+}
+.icon.filled.basket.dark {
+  background-image: url(../img/icons/basketblack.svg);
+}
+.icon.filled.basket.light {
+  background-image: url(../img/icons/basketwhite.svg);
+}
+.icon.large {
+  width: 6.6rem;
+  height: 6.6rem;
+}
+.icon.large.clothes {
+  background-image: url(../img/icons/clothes.svg);
+}
+.icon.large.geospan {
+  background-image: url(../img/icons/geospan.svg);
+}
+.icon.large.sklad {
+  background-image: url(../img/icons/sklad.svg);
+}
+.icon.large.space {
+  background-image: url(../img/icons/space.svg);
+}
+.icon.arrow {
+  width: 1rem;
+  height: 3rem;
+  background-image: url(../img/icons/arrtowbottomwhite.svg);
+}
+.icon:hover {
+  cursor: pointer;
+}

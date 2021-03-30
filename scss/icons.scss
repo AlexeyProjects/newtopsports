@@ -1,0 +1,78 @@
+.icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	&.skype {
+		background-image: url(../img/icons/skype.svg);
+		&.light {
+			background-image: url(../img/icons/skypewhite.svg);
+		}
+	}
+	&.instagram {
+		background-image: url(../img/icons/instagram.svg);
+		&.dark {
+			background-image: url(../img/icons/instagramdark.svg);
+		}
+	}
+	&.login {
+		background-image: url(../img/icons/login.svg);
+		&.light {
+			background-image: url(../img/icons/loginwhite.svg);
+		}
+	}
+	&.filled {
+		width: 4rem;
+		height: 4rem;
+		&.facebook {
+			background-image: url(../img/icons/facebook.svg);
+			&.transparent {
+				background-image: url(../img/icons/facebooktransp.svg);
+			}
+		}
+		&.vk {
+			background-image: url(../img/icons/vk.svg);
+			&.transparent {
+				background-image: url(../img/icons/vktransp.svg);
+			}
+		}
+		&.basketblack {
+			background-image: url(../img/icons/basketblack.svg);
+		}
+		&.basket {
+			&.dark {
+				background-image: url(../img/icons/basketblack.svg);
+			}
+			
+			&.light {
+				background-image: url(../img/icons/basketwhite.svg);
+			}
+		}
+	}
+	&.large {
+		width: 6.6rem;
+		height: 6.6rem;
+		&.clothes {
+			background-image: url(../img/icons/clothes.svg);
+		}		
+		&.geospan {
+			background-image: url(../img/icons/geospan.svg);
+		}
+		&.sklad {
+			background-image: url(../img/icons/sklad.svg);
+		}
+		&.space {
+			background-image: url(../img/icons/space.svg);
+		}
+	}
+	&.arrow {
+		width: 1rem;
+		height: 3rem;
+		background-image: url(../img/icons/arrtowbottomwhite.svg);
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
