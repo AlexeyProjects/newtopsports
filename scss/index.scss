@@ -1016,21 +1016,19 @@ path {
 		display: flex;
 		flex-direction: column;
 	}
+	span {
+		color: rgba(0,0,0,0.3);
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+	}
 	&-item {		
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 2rem;
 		font-size: 1.4rem;
-		a {
-			color: #53606F;
+		color: #53606F;	
 			&:hover {
 				text-decoration: underline;
 			}
-		}
-		span {
-			color: rgba(0,0,0,0.3);
-			font-size: 1.1rem;
-		}
 		
 	}
 	&-image {
