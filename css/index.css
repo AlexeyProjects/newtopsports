@@ -938,19 +938,21 @@ path {
   display: flex;
   flex-direction: column;
 }
-.vacancies span {
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
 .vacancies-item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   font-size: 1.4rem;
+}
+.vacancies-item a {
   color: #53606F;
 }
-.vacancies-item:hover {
+.vacancies-item a:hover {
   text-decoration: underline;
+}
+.vacancies-item span {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
 }
 .vacancies-image {
   position: absolute;

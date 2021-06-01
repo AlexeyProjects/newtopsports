@@ -59,10 +59,10 @@ fetch('https://api.hh.ru/vacancies?employer_id=2127980')
       vacancies.forEach((item) => {
         let temp = document.createElement('div');
         temp.className = ('vacancies-item');
-        let content = `<a href="${item.alternate_url}" class="vacancies-item" target="_blank">${item.name}</a>\n<span>${item.area.name}</span>`;
-        // temp.innerHTML = content;
+        let content = `<a href="${item.alternate_url}" target="_blank">${item.name}</a>\n<span>${item.area.name}</span>`;
+        temp.innerHTML = content;
         // temp.innerHTML = `<a href="${item.alternate_url}" class="vacancies-item">${item.name}</a>`
-        hhblock.insertAdjacentHTML('beforeend', content);
+        hhblock.append(temp);
 
       })
   });
