@@ -6,3 +6,19 @@
     opacity: 1;
   }
 }
+@keyframes open-map {
+  0% {
+    transform: translateX(-50rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+@keyframes open-right-menu {
+  0% {
+    transform: translateX(100rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}

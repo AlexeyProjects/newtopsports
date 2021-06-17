@@ -1,6 +1,9 @@
 'use strict';
 let scrollBlock = document.querySelector('.scroll-block');
 let cardList = document.getElementById('card-list');
+let mapBlock = document.querySelector('.map');
+let dealerList = document.querySelector('.map').querySelector('.row');
+
 		cardList.addEventListener('mouseover',(e) => {
 			document.body.classList.add('noScroll');
       scrollBlock.classList.remove('active')
@@ -9,6 +12,13 @@ let cardList = document.getElementById('card-list');
 			document.body.classList.remove('noScroll');
       scrollBlock.classList.add('active');
 		});
+    dealerList.addEventListener('mouseover',(e) => {
+      mapBlock.classList.remove('active');
+    });
+    dealerList.addEventListener('mouseout',(e) => {
+      mapBlock.classList.add('active');
+    });
+    
 		cardList.addEventListener('wheel', (e) => {
       console.log(e)
       if (e.deltaY == 3) {
@@ -47,7 +57,24 @@ let cardList = document.getElementById('card-list');
 function hasClass(element, cls) {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 }
+
+
 let hhblock = document.querySelector('.vacancies-list');
+
+let mapbutton = document.querySelector('.map-button');
+
+let header_btn = document.querySelector('.header-menu');
+let rigthmenu = document.querySelector('.right-menu-mobile');
+let rightmenu_close = document.querySelector('.right-menu-mobile__close');
+
+header_btn.addEventListener('click',(e) => {
+    console.log(rigthmenu)  
+    rigthmenu.style.transform = "translateX(0rem)";
+});
+
+rightmenu_close.addEventListener('click',(e) => {
+  rigthmenu.style.transform = "translateX(100rem)";
+});
 
 fetch('https://api.hh.ru/vacancies?employer_id=2127980')
   .then((response) => {
@@ -55,7 +82,6 @@ fetch('https://api.hh.ru/vacancies?employer_id=2127980')
   })
   .then((data) => {
     let vacancies = data.items;
-    console.log(vacancies);
       vacancies.forEach((item) => {
         let temp = document.createElement('div');
         temp.className = ('vacancies-item');
@@ -67,19 +93,5 @@ fetch('https://api.hh.ru/vacancies?employer_id=2127980')
       })
   });
 
-// let leftSlide = document.querySelector('.gallery-carousel .gallery-left');
-// let rightSlide = document.querySelector('.gallery-carousel .gallery-right');
-// let galleryWrap = document.querySelector('.gallery-wrap');
-// let imgWidth = document.querySelector('.gallery-item')
-// leftSlide.addEventListener('click',(e) => {
-//   galleryWrap.scrollLeft -= imgWidth.offsetWidth;
-//   console.log(imgWidth.offsetWidth);
-// });
 
-// rightSlide.addEventListener('click',(e) => {
-//   galleryWrap.scrollLeft += imgWidth.offsetWidth;
-//   console.log(imgWidth.offsetWidth);
-
-// });
-// console.log(leftSlide);
 

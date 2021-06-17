@@ -18,8 +18,9 @@ $('#fullpage').fullpage({
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection','sixtySection', 'seventySection','eightySection','ninetySection','login'],
+  anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection','sixtySection', 'seventySection','eightySection','ninetySection','tenthSection'],
   menu: '#menu',
+  responsiveWidth:1279,
 
   afterLoad: function(anchorLink, index) {
     $header_top.css('background', 'rgba(0, 47, 77, .3)');
@@ -44,7 +45,6 @@ $('#fullpage').fullpage({
     let posPage = nextIndex-2;
     if (items[posPage]) {
       let posItem = items[posPage].getBoundingClientRect().top;
-      console.log(blockNav);
       blockNav.textContent = `0${nextIndex-1}`;
       blockNav.style.top = posItem + 'px';
       $('.left-position').css(`transform', 'translateY(3rem)`);
